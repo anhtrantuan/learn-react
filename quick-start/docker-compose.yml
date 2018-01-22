@@ -1,0 +1,9 @@
+app:
+  container_name: "react-app"
+  image: "node:latest"
+  ports:
+    - "4000:3000"
+  volumes:
+    - ".:/webapp"
+  working_dir: "/webapp"
+  entrypoint: "yarn start"
